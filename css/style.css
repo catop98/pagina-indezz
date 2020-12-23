@@ -67,6 +67,11 @@ font-size: 2.6rem;
 }
 
 /* header*/
+.site-header{
+	background-color: #333333;
+	padding: 1rem 0 3rem 0;
+
+}
 .site-header.inicio {
 	background-image: url(../imagenes/header.jpg);
 	background-position: center center;
@@ -126,11 +131,13 @@ margin-right: 2rem;
 .contenedor-anuncio{
 	display: flex;
 	justify-content: space-between;
+	flex-wrap: wrap;
 }
 .anuncio{
-	flex-basis: calc(33.3%-1rem);
+	flex: 0 0 calc(33.3% - 1rem) ; /** no deja que se encoja y toma el tamaño de la base**/
 	border : 1px solid #B5B5B5;
 	background-color: #F5F5F5;
+	margin-bottom: 2rem; /** separacion hacia afuera**/
 }
 .contenido-anuncio{
 	padding: 2rem;
@@ -260,4 +267,17 @@ display: flex;
 	margin: 0;
 	color: white;
 
+}
+/** css paginas internas**/
+.contenido-nosotros{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr); /** tambien puede 1fr 1fr**/
+	grid-column-gap: 2rem;
+
+}
+.texto-nosotros blockquote {
+	font-weight: 900;
+	font-size: 2rem;
+	margin: 0;
+	padding: 1rem 0 3rem 0;
 }
