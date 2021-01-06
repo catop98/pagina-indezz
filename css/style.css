@@ -48,6 +48,9 @@ font-size: 2.6rem;
 .d-block{
 	display: block!important;
 }
+.contenido-centrado{
+	max-width: 800px;
+}
 /**botones**/
 .boton{
 	color: white;
@@ -58,6 +61,10 @@ font-size: 2.6rem;
 	display: inline-block;
 	padding: 1rem 3rem;
 	text-align: center;
+	border:none;
+}
+.boton:hover{    
+	cursor: pointer;  /* para poner el cursos sobre el boton , se le añade estilo*/
 }
 .boton-amarillo{
 	background-color: #E08709;
@@ -153,6 +160,8 @@ margin-right: 2rem;
 	list-style: none;
 	padding: 0;
 	display: flex;
+	flex:1;
+	max-width: 500px;
 
 }
 .iconos-caracteristicas li{
@@ -269,6 +278,7 @@ display: flex;
 
 }
 /** css paginas internas**/
+/** Nosotros**/
 .contenido-nosotros{
 	display: grid;
 	grid-template-columns: repeat(2, 1fr); /** tambien puede 1fr 1fr**/
@@ -280,4 +290,48 @@ display: flex;
 	font-size: 2rem;
 	margin: 0;
 	padding: 1rem 0 3rem 0;
+}
+
+/**Anuncio**/
+.resumen-propiedad{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+/**contacto**/
+.contacto p{
+ font-size: 1.4rem;
+ color: #4f4f4f;
+ margin: 2rem 0 0 0;
+}
+legend{
+	font-size: 2.3rem;
+	color:#4f4f4f;
+}
+
+label{
+	font-weight: 700;
+	text-transform: uppercase; 
+	display: block;
+}
+input:not([type="submit"]),
+textarea,
+select{
+	padding: 1rem;
+	display:block;
+	width: 100%;
+	background-color: #e1e1e1;
+	margin-bottom: 2rem;
+	border:none;
+}
+input[type="radio"]{
+	width: auto;
+	margin:0;
+}
+.forma-contacto{
+	max-width: 30rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
